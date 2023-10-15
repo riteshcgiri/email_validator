@@ -1,0 +1,55 @@
+@import '../variables/variables';
+.header{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    .nav{
+        display: flex;
+        align-items: center;
+        padding: 1rem ;
+        justify-content: space-between;
+        &__logo{
+            margin-left: 20px;
+            font-size: 2rem;
+            color: lighten($color-night, 20%);
+            transition: transform .2s;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+        &__list{
+            display: flex;
+            list-style: none;
+            li{
+                margin: 0 1rem;
+                padding: 1rem 2rem;
+                position: relative;
+                cursor: pointer;
+                a{
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    color: lighten($color-night, 20%);
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 90%;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 2px;
+                    transition: width .2s ;
+                    background: $color-day-soft;
+                    
+                }
+                &:hover{
+                    a{
+                        color: $color-day-soft;
+                    }
+                    &::after{
+                    width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
