@@ -1,5 +1,5 @@
 console.log('working..')
-
+let key  = 'YOUR_API_KEY'; //you can get it from https://app.emailvalidation.io/
 let results = document.querySelector('.result');
 let btn = document.querySelector('.btn');
 let str = ``;
