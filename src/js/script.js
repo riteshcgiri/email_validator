@@ -1,5 +1,5 @@
 console.log('working..')
-const key = 'ema_live_YkJ4bvkzHIkeZmk4T0QrYICZKU7xNqr3NU0KJeGl';
+
 let results = document.querySelector('.result');
 let btn = document.querySelector('.btn');
 let str = ``;
